@@ -21,7 +21,7 @@ fn main() {
         }
     };
 
-    let (sender, receiver) = channel();
+    let (sender, receiver) = channel::<u16>();
     for i in 0..arguments.get_thread_count() {
         let thread_sender: Sender<u16> = sender.clone();
         let ip = arguments.get_ip_address();
