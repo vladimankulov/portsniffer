@@ -37,7 +37,7 @@ fn main() {
     for v in receiver {
         output.push(v)
     }
-    println!("Available ports found:");
+    println!("\nAvailable ports found:");
     for port in output {
         println!("{port}");
     }
